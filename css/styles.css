@@ -83,6 +83,7 @@ body, html {
   max-width: 300px;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .schedule {
@@ -129,10 +130,6 @@ th {
   background-color: var(--color-accent);
   color: var(--color-white);
   font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
 }
 
 .extra {
