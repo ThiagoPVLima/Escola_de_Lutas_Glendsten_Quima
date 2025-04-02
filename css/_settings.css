@@ -1,0 +1,13 @@
+:root {
+    --color-primary: #222;
+    --color-secondary: #444;
+    --color-background: #f4f4f4;
+    --color-text: #333;
+    --color-white: #fff;
+    --color-hover: #f1f1f1;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    --border-radius: 10px;
+    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

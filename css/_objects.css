@@ -1,0 +1,15 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
+
+.grid {
+    display: flex;
+    gap: var(--spacing-small);
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex: 1 1 calc(33.333% - var(--spacing-small));
+}
