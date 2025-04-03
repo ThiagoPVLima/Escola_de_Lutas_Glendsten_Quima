@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entre em contato com o CT de Jiu-Jitsu">
     <meta name="keywords" content="Jiu-Jitsu, contato, horário de atendimento">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <title>Contato - CT de Jiu-Jitsu</title>
 </head>
 <body>
-    <header class="header">
-        <div class="menu-container">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>
-                    <li><a href="professores.html">Professores</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
 
+    <header class="header">
+        <!-- Menu Hambúrguer (igual ao index.html) -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
+        
+        <!-- Menu Lateral -->
+        <nav id="menu">
+            <span class="close-btn" onclick="toggleMenu()">&times;</span>
+            <ul>
+                <li><a href="index.html" onclick="toggleMenu()">Início</a></li>
+                <li><a href="quem-somos.html" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="professores.html" onclick="toggleMenu()">Professores</a></li>
+                <li><a href="galeria.html" onclick="toggleMenu()">Galeria</a></li>
+                <li><a href="contato.html" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Logos -->
         <div class="logo">
             <img src="imagens/Logo_CT.png" alt="Logo do CT de Jiu-Jitsu">
         </div>
         <h2>Escola de Luta Glendsten Quima</h2>
-        <div class="gft_logo">
+        <div class="gft-logo">
             <img src="imagens/logo_gft.png" alt="Logo da GF Team">
         </div>
     </header>
@@ -69,6 +71,11 @@
     <footer class="footer">
         <p><strong>Faixas etárias:</strong></p>
         <p>Kids: 4 a 7 anos | Teen: 8 a 12 anos | Juvenil: 13 a 17 anos | Adulto: 18+</p>
+        <br>
+        <p class="credits">Design e desenvolvimento: <a href="https://github.com/ThiagoPVLima">Thiago Lima</a></p>
     </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/menu.js"></script>
 </body>
 </html>

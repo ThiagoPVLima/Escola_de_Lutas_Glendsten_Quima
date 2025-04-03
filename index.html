@@ -23,6 +23,21 @@
 <body>
 
     <header class="header">
+        <!-- <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
+        <nav id="menu">
+            <span class="close-btn" onclick="toggleMenu()">&times;</span>
+            <ul>
+                <li><a href="#" onclick="toggleMenu()">Início</a></li>
+                <li><a href="quem-somos.html" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="professores.html" onclick="toggleMenu()">Professores</a></li>
+                <li><a href="galeria.html" onclick="toggleMenu()">Galeria</a></li>
+                <li><a href="contato.html" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+        </nav> -->
+        
         <div class="logo">
             <img src="imagens/Logo_CT.png" alt="Logo do CT de Jiu-Jitsu">
         </div>
@@ -33,13 +48,13 @@
     </header>
     
     <section class="images grid">
-        <img src="imagens/familia-jj.jpg" alt="Equipe de Jiu-Jitsu treinando no tatame">
+        <img src="imagens/familia-jj.jpg (2)" alt="Equipe de Jiu-Jitsu treinando no tatame">
     </section>
 
-    <section class="schedule container">
+    <section id="horarios" class="schedule container">
         <h1>Quadro de Horários</h1>
 
-        <div class="modality">
+        <div id="modalidades" class="modality">
             <h3>Jiu-Jitsu</h3>
             <table>
                 <tr>
@@ -112,18 +127,24 @@
             <h3>Muay Thai</h3>
             <table>
                 <tr>
+                    <th>Categoria</th>
                     <th>Dias</th>
                     <th>Horário</th>
                 </tr>
                 <tr>
-                    <td>Ter, Qui</td>
+                    <td>Kids</td>
+                    <td rowspan="2">Ter, Qui</td>
                     <td>18:45</td>
+                </tr>
+                <tr>
+                    <td>Adulto</td>
+                    <td>19:45</td>
                 </tr>
             </table>
         </div>
     </section>
 
-    <section class="extra container">
+    <section id="sobre" class="extra container">
       <div class="logo">
         <img src="imagens/logo-cafe.png" alt="Logo Café & Porrada"> 
       </div>
@@ -131,12 +152,12 @@
         <p class="mt-medium">O <span class="t-mark">Café & Porrada</span> é um encontro quinzenal para quem gosta de começar o sábado com treino forte e boa companhia. Jiu-Jitsu na prática e aquele bate-papo entre amigos. <span class="t-mark">Sem frescura, só treino e resenha.</span></p>
     </section>
 
-    <footer class="footer">
+    <footer id="contato" class="footer">
         <p><strong>Faixas etárias:</strong></p>
         <p>Kids: 4 a 7 anos | Teen: 8 a 12 anos | Juvenil: 13 a 17 anos | Adulto: 18+</p>
         <br>
-        <p class="credits">Design e desenvolvimento: <a href="[https://github.com/ThiagoPVLima]">Thiago Lima</a></p>
+        <p class="credits">Design e desenvolvimento: <a href="https://github.com/ThiagoPVLima">Thiago Lima</a></p>
     </footer>
-
 </body>
+<script src="js/menu.js"></script>
 </html>
