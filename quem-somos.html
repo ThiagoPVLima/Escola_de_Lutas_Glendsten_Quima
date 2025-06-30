@@ -3,50 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça a história do CT de Jiu-Jitsu">
-    <meta name="keywords" content="Jiu-Jitsu, história, academia">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Entre em contato com o CT de Jiu-Jitsu">
+    <meta name="keywords" content="Jiu-Jitsu, contato, horário de atendimento">
+    <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Quem Somos - CT de Jiu-Jitsu</title>
+    <title>Contato - CT de Jiu-Jitsu</title>
 </head>
 <body>
-    <header class="header">
-        <div class="menu-container">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>
-                    <li><a href="professores.html">Professores</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
 
+    <header class="header">
+        <!-- Menu Hambúrguer (igual ao index.html) -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
+        
+        <!-- Menu Lateral -->
+        <nav id="menu">
+            <span class="close-btn" onclick="toggleMenu()">&times;</span>
+            <ul>
+                <li><a href="index.html" onclick="toggleMenu()">Início</a></li>
+                <li><a href="quem-somos.html" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="professores.html" onclick="toggleMenu()">Professores</a></li>
+                <li><a href="galeria.html" onclick="toggleMenu()">Galeria</a></li>
+                <li><a href="contato.html" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Logos -->
         <div class="logo">
             <img src="imagens/Logo_CT.png" alt="Logo do CT de Jiu-Jitsu">
         </div>
         <h2>Escola de Luta Glendsten Quima</h2>
-        <div class="gft_logo">
+        <div class="gft-logo">
             <img src="imagens/logo_gft.png" alt="Logo da GF Team">
         </div>
     </header>
     
     <section class="container">
-        <h1>Quem Somos</h1>
-        <p>Fundado em 2010, o CT de Jiu-Jitsu é referência em artes marciais na região. Nossa missão é promover o desenvolvimento físico, mental e social através das artes marciais.</p>
-        <p>Com estrutura moderna e professores qualificados, oferecemos treinos para todas as idades e níveis.</p>
+        <h1>Contato</h1>
+        <div class="contact-info">
+            <h3>Informações para Contato</h3>
+            <p><strong>Endereço:</strong> Rua das Artes Marciais, 123 - Centro</p>
+            <p><strong>Telefone:</strong> (21) 98765-4321</p>
+            <p><strong>Email:</strong> contato@ctjiujitsu.com.br</p>
+            <p><strong>Horário de Funcionamento:</strong> Seg-Sex: 8h-22h | Sáb: 9h-12h</p>
+        </div>
+        
+        <form class="contact-form">
+            <h3>Envie sua Mensagem</h3>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
     </section>
     
     <footer class="footer">
         <p><strong>Faixas etárias:</strong></p>
         <p>Kids: 4 a 7 anos | Teen: 8 a 12 anos | Juvenil: 13 a 17 anos | Adulto: 18+</p>
+        <br>
+        <p class="credits">Design e desenvolvimento: <a href="https://github.com/ThiagoPVLima">Thiago Lima</a></p>
     </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
