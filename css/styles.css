@@ -213,7 +213,7 @@ th {
   background-color: var(--color-accent);
   width: 26px;
   height: 26px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius-sm);
